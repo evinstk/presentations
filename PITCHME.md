@@ -4,7 +4,7 @@ Considerations for `createRequestAction`
 
 ---
 
-### `createRequestAction`: What does it do?
+### `cRA`: What does it do?
 
 ```js
 // Signature

@@ -4,7 +4,7 @@ Considerations for `createRequestAction`
 
 ---
 
-### `cRA`: What does it do?
+##### `cRA`: What does it do?
 
 ```js
 // Signature
@@ -21,6 +21,10 @@ componentDidMount() {
   dispatch(fetchMyData(params)); // in our app, we often map to `dispatch` in `connect`
 }
 ```
+
+@[1-4]
+@[6-7]
+@[9-14]
 
 ---
 

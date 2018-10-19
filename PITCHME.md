@@ -30,9 +30,9 @@ componentDidMount() {
 
 ### `cRA`: The Good
 
-- Handles dispatching the three request-oriented action types for a given constant:
-  - Given constant DATA, will dispatch DATA_REQUEST, DATA_SUCCESS, and DATA_FAILURE at appropriate points.
+- Dispatches request action types for a given constant:
+  - `DATA` => `DATA_REQUEST`, `DATA_SUCCESS`, `DATA_FAILURE`
 - Updates related slices of state:
-  - isFetching: Boolean flag for constant is toggled over the course of the thunk’s execution.
-  - errors: In the event of an error, the details are stored in the errors state slice. These details are cleared on the next execution of the thunk.
-- Both of these patterns do not need to vary across different calls to createRequestAction, so it’s a good thing they are encapsulated.
+  - `isFetching`
+  - `errors`
+- Both of these patterns do not need to vary across different calls to `createRequestAction`.

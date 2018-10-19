@@ -18,13 +18,13 @@ export const fetchMyData = createRequestAction({ /* ... */ });
 // Where dispatch is available
 componentDidMount() {
   const { dispatch, fetchMyData, ...params } = this.props;
-  dispatch(fetchMyData(params)); // in our app, we often map to `dispatch` in `connect`
+  dispatch(fetchMyData(params));
 }
 ```
 
 @[1-4]
 @[6-7]
-@[9-14]
+@[9-14](In our app, we often map to `dispatch` in `connect` from `react-redux`)
 
 ---
 
